@@ -1,7 +1,7 @@
 // API 请求相关的类型定义和函数
 
 export interface FlowData {
-  cellStyleMap: Record<string, any>;
+  cellStyleMap: Record<string, unknown>;
   sumFlow: number;       // 总流量 (MB)
   consumeFlow: number;   // 已用流量 (MB)
   surplusFlow: number;   // 剩余流量 (MB)
