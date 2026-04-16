@@ -27,7 +27,7 @@ export async function getCardFlow(card: string): Promise<ApiResponse> {
 
     // 先发送请求让服务器更新流量数据（忽略返回结果）
     try {
-      await fetch(`https://xj.iot998.cn/app/simCard/getCardFlow?card=${card}`, {
+      await fetch(`https://xj.iot889.com/app/simCard/getCardFlow?card=${card}`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -37,7 +37,7 @@ export async function getCardFlow(card: string): Promise<ApiResponse> {
       // 忽略更新请求的错误
     }
     
-    const response = await fetch(`https://xj.iot998.cn/app/simCard/phoneSimCard?card=${card}`, {
+    const response = await fetch(`https://xj.iot889.com/app/simCard/phoneSimCard?card=${card}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
